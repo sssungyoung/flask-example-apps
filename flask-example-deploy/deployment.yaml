@@ -6,7 +6,7 @@ metadata:
     app: flask
   name: flask
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: flask
@@ -18,8 +18,5 @@ spec:
         app: flask
     spec:
       containers:
-      - image: ec2-3-38-115-59.ap-northeast-2.compute.amazonaws.com/admin/nginx:latest
+      - image: nginx
         name: flask-example
-        imagePullPolicy: Always
-      imagePullSecrets:
-      - name: regcred
