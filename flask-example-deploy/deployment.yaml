@@ -19,3 +19,4 @@ spec:
     spec:
       containers:
       - image: nginx
+        name: flask-example
