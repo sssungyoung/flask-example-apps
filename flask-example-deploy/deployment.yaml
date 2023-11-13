@@ -18,5 +18,8 @@ spec:
         app: flask
     spec:
       containers:
-      - image: nginx
-        name: flask-example
+      - name: nginx
+        image: ec2-3-38-115-59.ap-northeast-2.compute.amazonaws.com/admin/nginx
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: regcred 
