@@ -22,4 +22,4 @@ spec:
         name: flask-example
         imagePullPolicy: Always
       imagePullSecrets:
-      - name: regcred 
+      - name: regcred
