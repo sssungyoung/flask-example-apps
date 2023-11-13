@@ -18,7 +18,7 @@ spec:
         app: flask
     spec:
       containers:
-      - image: ec2-3-38-115-59.ap-northeast-2.compute.amazonaws.com/admin/nginx
+      - image: ec2-3-38-115-59.ap-northeast-2.compute.amazonaws.com/admin/nginx:lastest
         name: flask-example
         imagePullPolicy: Always
       imagePullSecrets:
