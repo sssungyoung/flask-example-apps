@@ -12,3 +12,6 @@ spec:
     targetPort: 5000
   selector:
     app: flask
+  type: LoadBalancer
+status:
+  loadBalancer: {}
