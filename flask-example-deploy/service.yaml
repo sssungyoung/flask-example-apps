@@ -11,7 +11,7 @@ spec:
     protocol: TCP
     targetPort: 5000
   selector:
-    app: flask
+    app: ssung
   type: LoadBalancer
 status:
   loadBalancer: {}
