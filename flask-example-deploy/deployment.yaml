@@ -18,5 +18,5 @@ spec:
         app: flask
     spec:
       containers:
-      - image: 181530151294.dkr.ecr.ap-northeast-2.amazonaws.com/ssung-test:latest
+      - image: 181530151294.dkr.ecr.ap-northeast-2.amazonaws.com/ssung-test:29
         name: flask-example
