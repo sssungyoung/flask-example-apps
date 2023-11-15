@@ -14,7 +14,7 @@ node {
                     sh "sed -i 's/ssung-test:.*\$/ssung-test:${IMAGETAG}/g' flask-example-deploy/deployment.yaml"
                     sh "git add ."
                     sh "git commit -m 'Done by Jenkins Job updatemaifest: ${IMAGETAG}'"
-                    sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/flask-example-apps.git"
+                    sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/flask-example-apps.git HEAD:main"
                 }
             }
         }
